@@ -1,0 +1,65 @@
+import random
+
+def random_numbers():
+    return [random.randint(1, 5) for i in range(5)]
+
+sequence_of_numbers_right = [None] * 5
+
+def detectFirstNumber():
+    global nums
+    while True:
+        nums = random_numbers()
+        if nums[0] == 1:
+            sequence_of_numbers_right[0] = 1 
+            print(nums)
+            print(sequence_of_numbers_right)
+            break
+
+def detectSecondNumber():
+    global nums
+    while True:
+        nums = random_numbers()
+        if nums[1] == 2:
+            sequence_of_numbers_right[1] = 2
+            print(nums)
+            print(sequence_of_numbers_right)
+            break
+
+def detectThirdNumber():
+    global nums
+    while True:
+        nums = random_numbers()
+        if nums[2] == 3:
+            sequence_of_numbers_right[2] = 3
+            print(nums)
+            print(sequence_of_numbers_right)
+            break
+
+def detectFourthNumber():
+    global nums 
+    while True:
+        nums = random_numbers()
+        if nums[3] == 4:
+            sequence_of_numbers_right[3] = 4
+            print(nums)
+            print(sequence_of_numbers_right)
+            break
+
+def detectFifthNumber():
+    global nums 
+    while True:
+        nums = random_numbers()
+        if nums[4] == 5:
+            sequence_of_numbers_right[4] = 5
+            print(nums)
+            print(sequence_of_numbers_right)
+            break
+
+def main():
+    detectFirstNumber()
+    detectSecondNumber()
+    detectThirdNumber()
+    detectFourthNumber()
+    detectFifthNumber()
+
+main()
